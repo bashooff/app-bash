@@ -3,7 +3,7 @@ from flask import Flask, render_template
 # instantiating flask object
 app = Flask(__name__)
 
-
+# create buttons for pages
 @app.route("/")
 def home():
     return render_template("home.html")
