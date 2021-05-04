@@ -17,6 +17,10 @@ def about():
 def contact():
     return render_template("contact.html")
 
+@app.route("/photos/")
+def photos():
+    return render_template("photos.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
